@@ -297,6 +297,32 @@ li {
 	letter-spacing: 0.02em;
 }
 
+.features__element::before {
+	display: block;
+	content: "";
+	height: 112px;
+	margin-bottom: 8px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: var(--accent);
+}
+
+.features__element--antenna::before {
+	background-image: url(../svg/features/antenna.svg);
+}
+
+.features__element--clock::before {
+	background-image: url(../svg/features/clock.svg);
+}
+
+.features__element--diagram::before {
+	background-image: url(../svg/features/diagram.svg);
+}
+
+.features__element--astronaut::before {
+	background-image: url(../svg/features/astronaut.svg);
+}
 /* -------------------WORK SECTION---------------------- */
 
 .work {
