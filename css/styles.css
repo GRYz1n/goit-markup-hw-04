@@ -196,7 +196,7 @@ li {
 	margin-left: auto;
 	margin-right: auto;
 	background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-		url("../images/people-office\ 1.jpg");
+		url("../images/people-office.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -309,19 +309,19 @@ li {
 }
 
 .features__element--antenna::before {
-	background-image: url(../svg/features/antenna.svg);
+	background-image: url(../images/svg/features/antenna.svg);
 }
 
 .features__element--clock::before {
-	background-image: url(../svg/features/clock.svg);
+	background-image: url(../images/svg/features/clock.svg);
 }
 
 .features__element--diagram::before {
-	background-image: url(../svg/features/diagram.svg);
+	background-image: url(../images/svg/features/diagram.svg);
 }
 
 .features__element--astronaut::before {
-	background-image: url(../svg/features/astronaut.svg);
+	background-image: url(../images/svg/features/astronaut.svg);
 }
 /* -------------------WORK SECTION---------------------- */
 
