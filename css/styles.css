@@ -339,7 +339,8 @@ li {
 }
 
 .work__title,
-.team__title {
+.team__title,
+.customers__title {
 	margin-bottom: 72px;
 
 	color: var(--dark);
@@ -393,10 +394,82 @@ li {
 }
 
 .team__text {
+	margin-bottom: 8px;
 	font-size: 16px;
 	line-height: 1.5;
 	text-align: center;
 	letter-spacing: 0.02em;
+}
+
+.team__sn-list {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	column-gap: 23px;
+	padding: 0;
+	margin: 0;
+}
+
+.link-socialnetworks {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50px;
+	background-color: var(--primary-brand);
+}
+
+.icon-socialnetworks {
+	width: 16px;
+	height: 16px;
+}
+
+.link-socialnetworks:hover,
+.link-socialnetworks:focus {
+	background-color: var(--pressed-state);
+	fill: var(--accent);
+}
+
+/* -------------------CUSTOMERS SECTION---------------------- */
+
+.customers__list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.customers__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 168px;
+	height: 88px;
+	margin-right: 24px;
+	box-sizing: border-box;
+	border: 1px solid var(--subtle-text);
+	border-radius: 4px;
+}
+
+.customers__link:last-child {
+	margin-right: 0px;
+}
+
+.customers__icon {
+	width: 104px;
+	height: 56px;
+	fill: var(--subtle-text);
+}
+
+.customers__link:hover .customers__icon,
+.customers__link:focus .customers__icon {
+	fill: var(--pressed-state);
+}
+
+.customers__link:hover,
+.customers__link:focus {
+	border: 1px solid var(--pressed-state);
+	fill: var(--pressed-state);
 }
 
 /* -------------------PORTFOLIO---------------------- */
@@ -463,10 +536,16 @@ li {
 	color: var(--light);
 }
 
-.footer__text {
+.footer__text,
+.footer__social--text {
 	width: 264px;
 	color: var(--accent);
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+}
+
+.icon-socialnetworks--footer {
+	width: 24px;
+	height: 24px;
 }
