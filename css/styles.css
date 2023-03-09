@@ -424,12 +424,12 @@ li {
 .icon-socialnetworks {
 	width: 16px;
 	height: 16px;
+	fill: var(--accent);
 }
 
 .link-socialnetworks:hover,
 .link-socialnetworks:focus {
 	background-color: var(--pressed-state);
-	fill: var(--accent);
 }
 
 /* -------------------CUSTOMERS SECTION---------------------- */
@@ -525,6 +525,7 @@ li {
 /* -------------------FOOTER---------------------- */
 
 .footer {
+	display: flex;
 	padding: 100px 16px 100px;
 	background: var(--dark);
 }
@@ -543,6 +544,47 @@ li {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+}
+
+.footer__social {
+	display: flex;
+	margin-left: 120px;
+}
+
+.footer__social--text {
+	margin-bottom: 20px;
+
+	color: var(--accent);
+
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+}
+
+.social-list {
+	display: flex;
+}
+
+.socialnetworks {
+	height: 40px;
+	width: 40px;
+	margin-right: 16px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: var(--pressed-state);
+}
+
+.footer-socialnetworks {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50px;
+	fill: var(--accent);
 }
 
 .icon-socialnetworks--footer {
