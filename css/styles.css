@@ -232,14 +232,17 @@ li {
 	letter-spacing: 0.04em;
 }
 
+.btn:hover,
+.btn:focus {
+	background-color: var(--pressed-state);
+}
+
 .btn--portfolio {
 	min-width: auto;
 	padding: 12px 24px 12px 24px;
 }
 
-.button,
 .btn--portfolio:hover,
-.button,
 .btn--portfolio:focus {
 	color: var(--light);
 	background-color: var(--pressed-state);
@@ -525,9 +528,12 @@ li {
 /* -------------------FOOTER---------------------- */
 
 .footer {
-	display: flex;
 	padding: 100px 16px 100px;
 	background: var(--dark);
+}
+
+.footer__container {
+	display: flex;
 }
 
 .footer__logo {
@@ -547,7 +553,6 @@ li {
 }
 
 .footer__social {
-	display: flex;
 	margin-left: 120px;
 }
 
@@ -563,20 +568,24 @@ li {
 	letter-spacing: 0.03em;
 }
 
-.social-list {
+.footer__social--list {
 	display: flex;
 }
 
-.socialnetworks {
+.footer__social--element {
 	height: 40px;
 	width: 40px;
 	margin-right: 16px;
 	border-radius: 50%;
 	cursor: pointer;
-	background-color: var(--pressed-state);
 }
 
-.footer-socialnetworks {
+.footer__social--element:hover,
+.footer__social--element:focus {
+	background-color: var(--success);
+}
+
+.footer__social--link {
 	width: 40px;
 	height: 40px;
 	display: flex;
@@ -587,7 +596,7 @@ li {
 	fill: var(--accent);
 }
 
-.icon-socialnetworks--footer {
+.footer__social--icon {
 	width: 24px;
 	height: 24px;
 }
