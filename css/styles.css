@@ -12,9 +12,12 @@
 	--white: #ffffff;
 	--card-set-gap: 24px;
 	--cornflower: rgba(231, 233, 252, 1);
+	--footer-social-bg: rgba(255, 255, 255, 0.1);
 	--card-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
 		0px 2px 1px rgba(46, 47, 66, 0.08);
-	--card-shadow-gallery: 0px 1px 6px rgba(46, 47, 66, 0.08);
+	--portfolio-btn-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+		0px 2px 2px rgba(0, 0, 0, 0.12);
+	--card-shadow-portfolio: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 /* -------------------MAIN PAGE---------------------- */
@@ -98,6 +101,7 @@ li {
 
 .page-header {
 	border-bottom: 1px solid var(--cornflower);
+	box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .logo {
@@ -193,7 +197,6 @@ li {
 
 .overlay {
 	max-width: 1440px;
-	height: 600px;
 	margin-left: auto;
 	margin-right: auto;
 	background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -268,7 +271,7 @@ li {
 .btn--portfolio:focus {
 	color: var(--light);
 	background-color: var(--pressed-state);
-	box-shadow: var(--card-shadow);
+	box-shadow: var(--portfolio-btn-shadow);
 }
 
 /* -------------------FEATURES SECTION---------------------- */
@@ -307,11 +310,12 @@ li {
 	content: "";
 	height: 112px;
 	margin-bottom: 8px;
+	border-radius: 4px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 64px;
-	background-color: var(--accent);
+	background-color: var(--light);
 }
 
 .features__element--antenna::before {
@@ -372,9 +376,8 @@ li {
 	margin-right: 24px;
 	box-sizing: border-box;
 	box-shadow: var(--card-shadow);
-	border-radius: 5px;
+	border-radius: 0px 0px 4px 4px;
 	overflow: hidden;
-	border-radius: 4px;
 
 	background-color: var(--light);
 }
@@ -383,9 +386,6 @@ li {
 	padding: 32px 16px;
 	background-color: var(--white);
 	text-align: center;
-	border-left: 1px solid var(--cornflower);
-	border-right: 1px solid var(--cornflower);
-	border-bottom: 1px solid var(--cornflower);
 }
 
 .team__member {
@@ -411,7 +411,7 @@ li {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	column-gap: 23px;
+	column-gap: 24px;
 	padding: 0;
 	margin: 0;
 }
@@ -496,17 +496,17 @@ li {
 
 .portfolio__element {
 	width: 360px;
-	box-shadow: var(--card-shadow-gallery);
+	border: 1px solid var(--accent);
+	box-shadow: var(--card-shadow-portfolio);
 }
 
 .portfolio__element:nth-child(n + 7) {
 	margin-bottom: 0px;
 }
 
-.portfolio__element:hover,
-.portfolio__element:focus {
+.portfolio__link:hover,
+.portfolio__link:focus {
 	box-shadow: var(--card-shadow);
-	/* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); */
 }
 
 .portfolio__card {
@@ -528,6 +528,7 @@ li {
 }
 
 .portfolio__text {
+	color: var(--text);
 	font-size: 16px;
 	line-height: 1.5;
 
@@ -552,8 +553,7 @@ li {
 	color: var(--light);
 }
 
-.footer__text,
-.footer__social--text {
+.footer__text {
 	width: 264px;
 	color: var(--accent);
 	font-size: 16px;
@@ -572,26 +572,22 @@ li {
 
 	font-style: normal;
 	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.03em;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
 }
 
 .footer__social--list {
 	display: flex;
+	gap: 16px;
 }
 
 .footer__social--element {
 	height: 40px;
 	width: 40px;
-	margin-right: 16px;
 	border-radius: 50%;
 	cursor: pointer;
-}
-
-.footer__social--element:hover,
-.footer__social--element:focus {
-	background-color: var(--success);
+	background-color: var(--footer-social-bg);
 }
 
 .footer__social--link {
@@ -603,6 +599,11 @@ li {
 	justify-content: center;
 	border-radius: 50px;
 	fill: var(--accent);
+}
+
+.footer__social--link:hover,
+.footer__social--link:focus {
+	background-color: var(--success);
 }
 
 .footer__social--icon {
