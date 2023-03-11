@@ -506,6 +506,7 @@ li {
 
 .portfolio__link:hover,
 .portfolio__link:focus {
+	display: block;
 	box-shadow: var(--card-shadow);
 }
 
